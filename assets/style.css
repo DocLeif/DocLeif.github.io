@@ -47,13 +47,18 @@ a {
 .brand {
   align-items: center;
   display: inline-flex;
-  line-height: 0;
+  font-size: 17px;
+  font-weight: 800;
+  gap: 10px;
+  line-height: 1;
 }
 
 .brand-logo {
   display: block;
-  height: auto;
-  width: clamp(132px, 18vw, 178px);
+  flex: 0 0 auto;
+  height: 34px;
+  object-fit: contain;
+  width: 34px;
 }
 
 nav {
@@ -566,6 +571,15 @@ details p {
 @media (max-width: 560px) {
   .site-header {
     padding: 10px 14px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .brand-logo {
+    height: 32px;
+    width: 32px;
   }
 
   nav a {
