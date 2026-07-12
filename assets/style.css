@@ -47,21 +47,13 @@ a {
 .brand {
   align-items: center;
   display: inline-flex;
-  font-size: 17px;
-  font-weight: 800;
-  gap: 10px;
+  line-height: 0;
 }
 
-.brand-mark {
-  align-items: center;
-  background: var(--plum);
-  border-radius: 8px;
-  color: white;
-  display: inline-flex;
-  font-weight: 900;
-  height: 32px;
-  justify-content: center;
-  width: 32px;
+.brand-logo {
+  display: block;
+  height: auto;
+  width: clamp(132px, 18vw, 178px);
 }
 
 nav {
