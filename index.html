@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tkemali.de - Georgische Pflaumensauce verstehen, kochen und kaufen</title>
     <meta name="description" content="Die deutsche Referenz zu Tkemali: Was die georgische Pflaumensauce ist, wie grüne und rote Tkemali schmecken, Grundrezept, Zutaten, Verwendung, Kaufberatung und FAQ." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://tkemali.de/" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/style.css" />
@@ -13,32 +14,155 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tkemali.de/" />
     <meta property="og:image" content="https://tkemali.de/assets/hero-tkemali.webp" />
+    <meta property="og:site_name" content="Tkemali.de" />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Recipe",
-        "name": "Tkemali Grundrezept",
-        "description": "Ein einfaches deutsches Grundrezept für georgische Tkemali-Sauce aus sauren Pflaumen, Kräutern, Knoblauch und Chili.",
-        "recipeCuisine": "Georgisch",
-        "recipeCategory": "Sauce",
-        "keywords": "Tkemali, georgische Pflaumensauce, Tkemali Rezept, Kirschpflaumen",
-        "recipeYield": "ca. 650 ml",
-        "prepTime": "PT15M",
-        "cookTime": "PT30M",
-        "totalTime": "PT45M",
-        "recipeIngredient": [
-          "1000 g saure Pflaumen oder Kirschpflaumen",
-          "3 Knoblauchzehen",
-          "1 Bund Koriander",
-          "1/2 Bund Dill",
-          "Chili nach Geschmack",
-          "1-2 TL Salz",
-          "optional: Minze, Koriandersamen, etwas Zucker oder Essig"
-        ],
-        "recipeInstructions": [
-          "Pflaumen waschen, mit wenig Wasser weich kochen und entsteinen oder passieren.",
-          "Mus erneut erhitzen und mit Knoblauch, Kräutern, Chili und Salz abschmecken.",
-          "Bei Bedarf mit Zucker, Essig oder Wasser ausbalancieren und heiß abfüllen."
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://tkemali.de/#organization",
+            "name": "Tkemali.de",
+            "url": "https://tkemali.de/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://tkemali.de/assets/logo-plum-square.png"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://tkemali.de/#website",
+            "url": "https://tkemali.de/",
+            "name": "Tkemali.de",
+            "description": "Die deutsche Referenz zu georgischer Tkemali-Pflaumensauce.",
+            "publisher": {
+              "@id": "https://tkemali.de/#organization"
+            },
+            "inLanguage": "de"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://tkemali.de/#webpage",
+            "url": "https://tkemali.de/",
+            "name": "Tkemali.de - Georgische Pflaumensauce verstehen, kochen und kaufen",
+            "description": "Die deutsche Referenz zu Tkemali: Was die georgische Pflaumensauce ist, wie grüne und rote Tkemali schmecken, Grundrezept, Zutaten, Verwendung, Kaufberatung und FAQ.",
+            "isPartOf": {
+              "@id": "https://tkemali.de/#website"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://tkemali.de/assets/hero-tkemali.webp"
+            },
+            "dateModified": "2026-07-15",
+            "inLanguage": "de",
+            "about": [
+              "Tkemali",
+              "georgische Pflaumensauce",
+              "georgische Küche",
+              "Kirschpflaumen"
+            ],
+            "mainEntity": [
+              {
+                "@id": "https://tkemali.de/#recipe"
+              },
+              {
+                "@id": "https://tkemali.de/#faq"
+              }
+            ]
+          },
+          {
+            "@type": "Recipe",
+            "@id": "https://tkemali.de/#recipe",
+            "mainEntityOfPage": {
+              "@id": "https://tkemali.de/#webpage"
+            },
+            "name": "Tkemali Grundrezept",
+            "description": "Ein einfaches deutsches Grundrezept für georgische Tkemali-Sauce aus sauren Pflaumen, Kräutern, Knoblauch und Chili.",
+            "image": "https://tkemali.de/assets/hero-tkemali.webp",
+            "author": {
+              "@id": "https://tkemali.de/#organization"
+            },
+            "datePublished": "2026-07-12",
+            "dateModified": "2026-07-15",
+            "recipeCuisine": "Georgisch",
+            "recipeCategory": "Sauce",
+            "keywords": "Tkemali, georgische Pflaumensauce, Tkemali Rezept, Kirschpflaumen",
+            "recipeYield": "ca. 650 ml",
+            "prepTime": "PT15M",
+            "cookTime": "PT30M",
+            "totalTime": "PT45M",
+            "recipeIngredient": [
+              "1000 g saure Pflaumen oder Kirschpflaumen",
+              "3 Knoblauchzehen",
+              "1 Bund Koriander",
+              "1/2 Bund Dill",
+              "Chili nach Geschmack",
+              "1-2 TL Salz",
+              "optional: Minze, Koriandersamen, etwas Zucker oder Essig"
+            ],
+            "recipeInstructions": [
+              {
+                "@type": "HowToStep",
+                "text": "Pflaumen waschen, mit wenig Wasser weich kochen und entsteinen oder passieren."
+              },
+              {
+                "@type": "HowToStep",
+                "text": "Mus erneut erhitzen und mit Knoblauch, Kräutern, Chili und Salz abschmecken."
+              },
+              {
+                "@type": "HowToStep",
+                "text": "Bei Bedarf mit Zucker, Essig oder Wasser ausbalancieren und heiß abfüllen."
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://tkemali.de/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Was ist Tkemali?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tkemali ist eine georgische Sauce aus sauren Pflaumen oder Kirschpflaumen, gewürzt mit Kräutern, Knoblauch, Chili und Salz."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Ist Tkemali eher Ketchup oder Chutney?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Am ehesten ist Tkemali eine fruchtig-saure Würzsauce. Sie kann Ketchup ersetzen, ist aber kräutriger, saurer und weniger süß."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Welche Pflaumen eignen sich in Deutschland?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ideal sind saure Kirschpflaumen oder Mirabellen. Zwetschgen funktionieren auch, brauchen aber meist mehr Säure durch Essig oder Zitrone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wie lange hält Tkemali?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Frisch gekocht hält Tkemali im Kühlschrank einige Tage bis Wochen. Eingekocht und sauber abgefüllt kann die Sauce deutlich länger haltbar sein."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Ist Tkemali scharf?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Das hängt vom Rezept ab. Viele Varianten sind nur leicht scharf, manche georgischen Produkte sind deutlich pikanter."
+                }
+              }
+            ]
+          }
         ]
       }
     </script>
