@@ -200,7 +200,8 @@ p {
 
 .intro-grid,
 .recipe-section,
-.buy-section {
+.buy-section,
+.contact-section {
   align-items: start;
   display: grid;
   gap: clamp(28px, 5vw, 64px);
@@ -217,6 +218,7 @@ p {
 .use-card,
 .calculator,
 .checklist,
+.contact-form,
 details {
   background: rgba(255, 255, 255, 0.86);
   border: 1px solid var(--line);
@@ -433,6 +435,71 @@ td:first-child {
   top: 1px;
 }
 
+.contact-section {
+  align-items: center;
+}
+
+.contact-copy {
+  max-width: 640px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+}
+
+.contact-form label {
+  color: var(--foreground);
+  display: grid;
+  font-size: 14px;
+  font-weight: 900;
+  gap: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--foreground);
+  font: inherit;
+  padding: 13px 14px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(31, 104, 72, 0.14);
+  outline: none;
+}
+
+.form-note {
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.form-note a {
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-form .button {
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  justify-self: start;
+}
+
 .faq-list {
   display: grid;
   gap: 12px;
@@ -559,6 +626,7 @@ details p {
   .intro-grid,
   .recipe-section,
   .buy-section,
+  .contact-section,
   .use-grid {
     grid-template-columns: 1fr;
   }

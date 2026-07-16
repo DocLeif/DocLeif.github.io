@@ -179,6 +179,7 @@
         <a href="#rezept">Rezept</a>
         <a href="#gruen-rot">Grün oder rot</a>
         <a href="#kaufen">Kaufen</a>
+        <a href="#kontakt">Kontakt</a>
         <a href="#faq">FAQ</a>
       </nav>
     </header>
@@ -326,6 +327,31 @@
             <li>Glas oder Flasche mit gut lesbarer Zutatenliste</li>
           </ul>
         </div>
+      </section>
+
+      <section class="section contact-section" id="kontakt">
+        <div class="contact-copy">
+          <p class="section-kicker">Kontakt</p>
+          <h2>Du hast ein Rezept, einen Tipp oder eine Frage zu Tkemali?</h2>
+          <p>Schreib mir gern eine Nachricht. Besonders spannend sind Hinweise zu georgischen Rezepten, guten Bezugsquellen, grünen Pflaumen oder Tkemali-Produkten, die in Deutschland erhältlich sind.</p>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/xaqrenqe" method="POST">
+          <input type="hidden" name="_subject" value="Neue Nachricht über Tkemali.de" />
+          <label for="contact-name">
+            Name
+            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Dein Name" />
+          </label>
+          <label for="contact-email">
+            E-Mail-Adresse
+            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="deinname@example.com" required />
+          </label>
+          <label for="contact-message">
+            Nachricht
+            <textarea id="contact-message" name="message" rows="6" placeholder="Deine Frage, dein Rezept oder dein Tipp zu Tkemali" required></textarea>
+          </label>
+          <p class="form-note">Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Nachricht verarbeitet. Weitere Informationen findest du in der <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
+          <button class="button primary" type="submit">Nachricht senden</button>
+        </form>
       </section>
 
       <section class="section faq-section" id="faq">
