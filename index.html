@@ -8,7 +8,7 @@
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://tkemali.de/" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/style.css?v=20260716-2" />
     <meta property="og:title" content="Tkemali.de - Die deutsche Referenz zu Tkemali" />
     <meta property="og:description" content="Alles Wichtige zu georgischer Tkemali-Sauce: Geschmack, Rezept, Zutaten, Varianten, Verwendung und Kaufberatung." />
     <meta property="og:type" content="website" />
@@ -337,18 +337,18 @@
         </div>
         <form class="contact-form" action="https://formspree.io/f/xaqrenqe" method="POST">
           <input type="hidden" name="_subject" value="Neue Nachricht über Tkemali.de" />
-          <label for="contact-name">
-            Name
+          <div class="form-field">
+            <label for="contact-name">Name</label>
             <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Dein Name" />
-          </label>
-          <label for="contact-email">
-            E-Mail-Adresse
+          </div>
+          <div class="form-field">
+            <label for="contact-email">E-Mail-Adresse</label>
             <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="deinname@example.com" required />
-          </label>
-          <label for="contact-message">
-            Nachricht
+          </div>
+          <div class="form-field">
+            <label for="contact-message">Nachricht</label>
             <textarea id="contact-message" name="message" rows="6" placeholder="Deine Frage, dein Rezept oder dein Tipp zu Tkemali" required></textarea>
-          </label>
+          </div>
           <p class="form-note">Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Nachricht verarbeitet. Weitere Informationen findest du in der <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
           <button class="button primary" type="submit">Nachricht senden</button>
         </form>
