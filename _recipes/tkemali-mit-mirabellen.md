@@ -6,7 +6,7 @@ card_text: "Die praktische gelbe Variante für alle, die keine georgischen Kirsc
 variant: "Regional & mild-säuerlich"
 color: "yellow"
 order: 3
-image: "/assets/hero-tkemali.webp"
+image: "/assets/rezept-tkemali-mirabellen.webp"
 image_alt: "Tkemali-Sauce mit Pflaumen und frischen Kräutern"
 prep_time: "20 Min."
 cook_time: "30 Min."

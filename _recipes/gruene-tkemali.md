@@ -6,7 +6,7 @@ card_text: "Die klassische, besonders saure Variante mit Koriander, Dill, Knobla
 variant: "Klassisch & kräftig-sauer"
 color: "green"
 order: 1
-image: "/assets/hero-tkemali.webp"
+image: "/assets/rezept-gruene-tkemali.webp"
 image_alt: "Grüne Tkemali-Sauce mit Pflaumen und frischen Kräutern"
 prep_time: "15 Min."
 cook_time: "30 Min."

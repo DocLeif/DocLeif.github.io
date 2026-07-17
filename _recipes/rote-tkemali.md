@@ -6,7 +6,7 @@ card_text: "Eine rundere, fruchtigere Tkemali für Grillgerichte, Lamm, Kartoffe
 variant: "Fruchtig & würzig"
 color: "red"
 order: 2
-image: "/assets/hero-tkemali.webp"
+image: "/assets/rezept-rote-tkemali.webp"
 image_alt: "Tkemali-Sauce mit Pflaumen, Knoblauch und Kräutern"
 prep_time: "15 Min."
 cook_time: "35 Min."
