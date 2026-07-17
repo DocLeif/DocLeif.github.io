@@ -1,20 +1,26 @@
 {% assign knowledge_image_src = page.image | default: '/assets/hero-tkemali.webp' %}
+{% assign knowledge_image_meta_src = knowledge_image_src %}
 {% assign knowledge_image_alt = page.image_alt %}
 {% case page.nav_key %}
   {% when 'wissen' %}
     {% assign knowledge_image_src = '/assets/was-ist-tkemali.webp?v=20260717-hq2' %}
+    {% assign knowledge_image_meta_src = knowledge_image_src %}
     {% assign knowledge_image_alt = 'Grüne Tkemali-Sauce mit grünen Pflaumen, Dill, Koriander und Knoblauch' %}
   {% when 'varianten' %}
     {% assign knowledge_image_src = '/assets/gruen-oder-rot.webp?v=20260717-hq2' %}
+    {% assign knowledge_image_meta_src = knowledge_image_src %}
     {% assign knowledge_image_alt = 'Grüne und rote Tkemali-Sauce mit passenden Pflaumen und Kräutern' %}
   {% when 'kaufen' %}
-    {% assign knowledge_image_src = '/assets/tkemali-kaufen.webp?v=20260717-hq2' %}
+    {% assign knowledge_image_meta_src = '/assets/tkemali-kaufen.webp?v=20260717-hq2' %}
+    {% capture knowledge_image_src %}data:image/webp;base64,{% include knowledge-images-hq/tkemali-kaufen-01.b64 %}{% include knowledge-images-hq/tkemali-kaufen-02.b64 %}{% include knowledge-images-hq/tkemali-kaufen-03.b64 %}{% include knowledge-images-hq/tkemali-kaufen-04.b64 %}{% include knowledge-images-hq/tkemali-kaufen-05.b64 %}{% include knowledge-images-hq/tkemali-kaufen-06.b64 %}{% include knowledge-images-hq/tkemali-kaufen-07.b64 %}{% include knowledge-images-hq/tkemali-kaufen-08.b64 %}{% include knowledge-images-hq/tkemali-kaufen-09.b64 %}{% include knowledge-images-hq/tkemali-kaufen-10.b64 %}{% endcapture %}
     {% assign knowledge_image_alt = 'Flaschen und Gläser mit grüner und roter Tkemali-Sauce' %}
   {% when 'verwendung' %}
     {% assign knowledge_image_src = '/assets/wozu-passt-tkemali.webp?v=20260717-hq2' %}
+    {% assign knowledge_image_meta_src = knowledge_image_src %}
     {% assign knowledge_image_alt = 'Tkemali-Sauce zu gegrilltem Fleisch, Kartoffeln und Gemüse' %}
   {% when 'faq' %}
     {% assign knowledge_image_src = '/assets/faq-tkemali.webp?v=20260717-hq2' %}
+    {% assign knowledge_image_meta_src = knowledge_image_src %}
     {% assign knowledge_image_alt = 'Tkemali-Sauce mit Pflaumen, Kräutern und Knoblauch' %}
 {% endcase %}
 <!doctype html>
@@ -33,12 +39,12 @@
     <meta property="og:description" content="{{ page.description | escape }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:image" content="{{ site.url }}{{ knowledge_image_src }}" />
+    <meta property="og:image" content="{{ site.url }}{{ knowledge_image_meta_src }}" />
     <meta property="og:image:alt" content="{{ knowledge_image_alt }}" />
     <meta property="og:site_name" content="Tkemali.de" />
     <meta property="og:locale" content="de_DE" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="{{ site.url }}{{ knowledge_image_src }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ knowledge_image_meta_src }}" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -57,7 +63,7 @@
             },
             "primaryImageOfPage": {
               "@type": "ImageObject",
-              "url": "{{ site.url }}{{ knowledge_image_src }}"
+              "url": "{{ site.url }}{{ knowledge_image_meta_src }}"
             },
             "dateModified": "{{ page.date_modified }}",
             "inLanguage": "de"
@@ -128,7 +134,7 @@
             <h1>{{ page.title }}</h1>
             <p class="knowledge-lead">{{ page.lead }}</p>
           </div>
-          <img src="{{ knowledge_image_src }}" alt="{{ knowledge_image_alt }}" width="1536" height="1024" decoding="async" fetchpriority="high" />
+          <img src="{{ knowledge_image_src | strip }}" alt="{{ knowledge_image_alt }}" width="1280" height="853" decoding="async" fetchpriority="high" />
         </header>
 
         <div class="knowledge-layout">
