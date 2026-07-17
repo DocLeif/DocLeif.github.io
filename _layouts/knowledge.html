@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.seo_title | default: page.title }} | Tkemali.de</title>
+    <meta name="description" content="{{ page.description | escape }}" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/style.css?v=20260717-2" />
+    <meta property="og:title" content="{{ page.seo_title | default: page.title }} | Tkemali.de" />
+    <meta property="og:description" content="{{ page.description | escape }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}{{ page.image | default: '/assets/hero-tkemali.webp' }}" />
+    <meta property="og:site_name" content="Tkemali.de" />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "{{ site.url }}{{ page.url }}#webpage",
+            "url": "{{ site.url }}{{ page.url }}",
+            "name": {{ page.seo_title | default: page.title | jsonify }},
+            "description": {{ page.description | jsonify }},
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "{{ site.url }}/#website",
+              "name": "Tkemali.de",
+              "url": "{{ site.url }}/"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "{{ site.url }}{{ page.image | default: '/assets/hero-tkemali.webp' }}"
+            },
+            "dateModified": "{{ page.date_modified }}",
+            "inLanguage": "de"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Startseite",
+                "item": "{{ site.url }}/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": {{ page.title | jsonify }},
+                "item": "{{ site.url }}{{ page.url }}"
+              }
+            ]
+          }{% if page.faq_items %},
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {% for item in page.faq_items %}
+              {
+                "@type": "Question",
+                "name": {{ item.question | jsonify }},
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": {{ item.answer | jsonify }}
+                }
+              }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ]
+          }{% endif %}
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Tkemali.de Startseite">
+        <img class="brand-logo" src="/assets/logo-plum-square.png" alt="" width="256" height="256" />
+        <span>Tkemali.de</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="/">Startseite</a>
+        <a href="/was-ist-tkemali/"{% if page.nav_key == 'wissen' %} aria-current="page"{% endif %}>Was ist Tkemali?</a>
+        <a href="/rezepte/"{% if page.nav_key == 'rezepte' %} aria-current="page"{% endif %}>Rezepte</a>
+        <a href="/gruen-oder-rot/"{% if page.nav_key == 'varianten' %} aria-current="page"{% endif %}>Grün oder rot</a>
+        <a href="/wozu-passt-tkemali/"{% if page.nav_key == 'verwendung' %} aria-current="page"{% endif %}>Verwendung</a>
+        <a href="/tkemali-kaufen/"{% if page.nav_key == 'kaufen' %} aria-current="page"{% endif %}>Kaufen</a>
+        <a href="/faq/"{% if page.nav_key == 'faq' %} aria-current="page"{% endif %}>FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="knowledge-page{% if page.nav_key == 'faq' %} faq-page{% endif %}">
+        <div class="recipe-breadcrumb" aria-label="Brotkrümelnavigation">
+          <a href="/">Startseite</a><span aria-hidden="true">›</span>
+          <span>{{ page.title }}</span>
+        </div>
+
+        <header class="knowledge-hero">
+          <div class="knowledge-hero-copy">
+            <p class="section-kicker">{{ page.eyebrow }}</p>
+            <h1>{{ page.title }}</h1>
+            <p class="knowledge-lead">{{ page.lead }}</p>
+          </div>
+          <img src="{{ page.image | default: '/assets/hero-tkemali.webp' }}" alt="{{ page.image_alt }}" width="1200" height="800" />
+        </header>
+
+        <div class="knowledge-layout">
+          <div class="knowledge-main">
+            {{ content }}
+
+            {% if page.faq_items %}
+            <section class="knowledge-faq" aria-labelledby="alle-fragen">
+              <p class="section-kicker">Fragen und Antworten</p>
+              <h2 id="alle-fragen">Häufige Fragen zu Tkemali</h2>
+              <div class="faq-list">
+                {% for item in page.faq_items %}
+                <details>
+                  <summary>{{ item.question }}</summary>
+                  <p>{{ item.answer }}</p>
+                </details>
+                {% endfor %}
+              </div>
+            </section>
+            {% endif %}
+          </div>
+
+          <aside class="knowledge-sidebar">
+            {% if page.toc %}
+            <div class="knowledge-sidebar-card">
+              <p class="section-kicker">Auf dieser Seite</p>
+              {% for item in page.toc %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if page.related %}
+            <div class="knowledge-sidebar-card">
+              <p class="section-kicker">Passend dazu</p>
+              {% for item in page.related %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </aside>
+        </div>
+
+        <section class="knowledge-related">
+          <div>
+            <p class="section-kicker">Weiter entdecken</p>
+            <h2>{{ page.cta_title | default: 'Mehr über Tkemali erfahren' }}</h2>
+            <p>{{ page.cta_text | default: 'Entdecke Rezepte, Varianten und praktische Verwendungsideen für die georgische Pflaumensauce.' }}</p>
+          </div>
+          <a class="button primary" href="{{ page.cta_url | default: '/rezepte/' }}">{{ page.cta_label | default: 'Zu den Rezepten' }}</a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>Tkemali.de – Wissen, Rezepte und Kaufberatung zur georgischen Pflaumensauce.</p>
+      <nav class="legal-nav" aria-label="Rechtliche Seiten">
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+      </nav>
+    </footer>
+  </body>
+</html>
