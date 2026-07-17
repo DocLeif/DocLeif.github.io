@@ -1,3 +1,22 @@
+{% assign knowledge_image_src = page.image | default: '/assets/hero-tkemali.webp' %}
+{% assign knowledge_image_alt = page.image_alt %}
+{% case page.nav_key %}
+  {% when 'wissen' %}
+    {% capture knowledge_image_src %}data:image/webp;base64,{% include knowledge-images/was-ist-tkemali-1.b64 %}{% include knowledge-images/was-ist-tkemali-2.b64 %}{% include knowledge-images/was-ist-tkemali-3.b64 %}{% endcapture %}
+    {% assign knowledge_image_alt = 'Grüne Tkemali-Sauce mit grünen Pflaumen, Dill, Koriander und Knoblauch' %}
+  {% when 'varianten' %}
+    {% capture knowledge_image_src %}data:image/webp;base64,{% include knowledge-images/gruen-oder-rot.b64 %}{% endcapture %}
+    {% assign knowledge_image_alt = 'Grüne und rote Tkemali-Sauce mit passenden Pflaumen und Kräutern' %}
+  {% when 'kaufen' %}
+    {% capture knowledge_image_src %}data:image/webp;base64,{% include knowledge-images/tkemali-kaufen.b64 %}{% endcapture %}
+    {% assign knowledge_image_alt = 'Flaschen und Gläser mit grüner und roter Tkemali-Sauce' %}
+  {% when 'verwendung' %}
+    {% capture knowledge_image_src %}data:image/webp;base64,{% include knowledge-images/wozu-passt-tkemali.b64 %}{% endcapture %}
+    {% assign knowledge_image_alt = 'Tkemali-Sauce zu gegrilltem Fleisch, Kartoffeln und Gemüse' %}
+  {% when 'faq' %}
+    {% capture knowledge_image_src %}data:image/webp;base64,{% include knowledge-images/faq.b64 %}{% endcapture %}
+    {% assign knowledge_image_alt = 'Tkemali-Sauce mit Pflaumen, Kräutern und Knoblauch' %}
+{% endcase %}
 <!doctype html>
 <html lang="de">
   <head>
@@ -107,7 +126,7 @@
             <h1>{{ page.title }}</h1>
             <p class="knowledge-lead">{{ page.lead }}</p>
           </div>
-          <img src="{{ page.image | default: '/assets/hero-tkemali.webp' }}" alt="{{ page.image_alt }}" width="1200" height="800" />
+          <img src="{{ knowledge_image_src | strip }}" alt="{{ knowledge_image_alt }}" width="1200" height="800" decoding="async" fetchpriority="high" />
         </header>
 
         <div class="knowledge-layout">
