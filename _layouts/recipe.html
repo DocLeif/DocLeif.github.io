@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} | Tkemali.de</title>
+    <meta name="description" content="{{ page.description | escape }}" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/style.css?v=20260717-1" />
+    <meta property="og:title" content="{{ page.title }} | Tkemali.de" />
+    <meta property="og:description" content="{{ page.description | escape }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta property="og:locale" content="de_DE" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": {{ page.title | jsonify }},
+        "description": {{ page.description | jsonify }},
+        "image": "{{ site.url }}{{ page.image }}",
+        "author": {
+          "@type": "Person",
+          "name": "Leif Knaus"
+        },
+        "datePublished": "{{ page.date_published }}",
+        "dateModified": "{{ page.date_modified }}",
+        "recipeCuisine": "Georgisch",
+        "recipeCategory": "Sauce",
+        "keywords": {{ page.keywords | jsonify }},
+        "prepTime": "{{ page.prep_iso }}",
+        "cookTime": "{{ page.cook_iso }}",
+        "totalTime": "{{ page.total_iso }}",
+        "recipeYield": {{ page.recipe_yield | jsonify }},
+        "recipeIngredient": {{ page.ingredients | jsonify }},
+        "recipeInstructions": [
+          {% for step in page.steps %}
+          {
+            "@type": "HowToStep",
+            "position": {{ forloop.index }},
+            "text": {{ step | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Tkemali.de Startseite">
+        <img class="brand-logo" src="/assets/logo-plum-square.png" alt="" width="256" height="256" />
+        <span>Tkemali.de</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="/">Startseite</a>
+        <a href="/rezepte/" aria-current="page">Rezepte</a>
+        <a href="/#kaufen">Kaufen</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="recipe-page">
+        <div class="recipe-breadcrumb">
+          <a href="/">Startseite</a><span aria-hidden="true">›</span>
+          <a href="/rezepte/">Rezepte</a><span aria-hidden="true">›</span>
+          <span>{{ page.short_title }}</span>
+        </div>
+
+        <header class="recipe-page-hero recipe-page-hero--{{ page.color }}">
+          <div class="recipe-page-hero-copy">
+            <p class="section-kicker">{{ page.variant }}</p>
+            <h1>{{ page.title }}</h1>
+            <p class="recipe-lead">{{ page.description }}</p>
+            <dl class="recipe-facts">
+              <div><dt>Vorbereitung</dt><dd>{{ page.prep_time }}</dd></div>
+              <div><dt>Kochzeit</dt><dd>{{ page.cook_time }}</dd></div>
+              <div><dt>Ergibt</dt><dd>{{ page.recipe_yield }}</dd></div>
+              <div><dt>Schwierigkeit</dt><dd>{{ page.difficulty }}</dd></div>
+            </dl>
+          </div>
+          <img src="{{ page.image }}" alt="{{ page.image_alt }}" width="1200" height="800" />
+        </header>
+
+        <div class="recipe-page-grid">
+          <div class="recipe-main">
+            <section class="recipe-intro">
+              {{ content }}
+            </section>
+
+            <section aria-labelledby="zutaten">
+              <p class="section-kicker">Zutaten</p>
+              <h2 id="zutaten">Das brauchst du</h2>
+              <ul class="ingredient-list">
+                {% for ingredient in page.ingredients %}
+                <li>{{ ingredient }}</li>
+                {% endfor %}
+              </ul>
+            </section>
+
+            <section aria-labelledby="zubereitung">
+              <p class="section-kicker">Zubereitung</p>
+              <h2 id="zubereitung">Schritt für Schritt</h2>
+              <ol class="recipe-steps">
+                {% for step in page.steps %}
+                <li><span>{{ step }}</span></li>
+                {% endfor %}
+              </ol>
+            </section>
+
+            <aside class="recipe-note">
+              <strong>Wichtig:</strong>
+              <span>{{ page.storage }}</span>
+            </aside>
+          </div>
+
+          <aside class="recipe-sidebar">
+            <div class="recipe-sidebar-card">
+              <p class="section-kicker">Schnellzugriff</p>
+              <a href="#zutaten">Zutaten</a>
+              <a href="#zubereitung">Zubereitung</a>
+              <a href="/rezepte/">Alle Rezepte</a>
+            </div>
+            <div class="recipe-sidebar-card">
+              <p class="section-kicker">Passt besonders zu</p>
+              <ul>
+                {% for pairing in page.pairings %}
+                <li>{{ pairing }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <section class="more-recipes">
+          <div>
+            <p class="section-kicker">Mehr Tkemali</p>
+            <h2>Weitere Varianten entdecken</h2>
+          </div>
+          <a class="button primary" href="/rezepte/">Zur Rezeptauswahl</a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>Tkemali.de – Wissen und Rezepte zur georgischen Pflaumensauce.</p>
+      <nav class="legal-nav" aria-label="Rechtliche Seiten">
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+      </nav>
+    </footer>
+  </body>
+</html>
