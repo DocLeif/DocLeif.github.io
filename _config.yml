@@ -1,0 +1,21 @@
+title: Tkemali.de
+description: Die deutsche Referenz zu georgischer Tkemali-Pflaumensauce.
+url: https://tkemali.de
+baseurl: ""
+lang: de
+timezone: Europe/Berlin
+
+collections:
+  recipes:
+    output: true
+    permalink: /rezepte/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: recipe
+
+exclude:
+  - README.md

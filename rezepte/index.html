@@ -1,0 +1,130 @@
+---
+title: Tkemali-Rezepte
+description: Grüne, rote und gelbe Tkemali selber machen: ausführliche Rezepte für die georgische Pflaumensauce.
+permalink: /rezepte/
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tkemali-Rezepte: grün, rot und mit Mirabellen | Tkemali.de</title>
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://tkemali.de/rezepte/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/style.css?v=20260717-1" />
+    <meta property="og:title" content="Tkemali-Rezepte: grün, rot und mit Mirabellen" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tkemali.de/rezepte/" />
+    <meta property="og:image" content="https://tkemali.de/assets/hero-tkemali.webp" />
+    <meta property="og:locale" content="de_DE" />
+    {% assign recipes = site.recipes | sort: "order" %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Tkemali-Rezepte",
+        "itemListElement": [
+          {% for recipe in recipes %}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "url": "https://tkemali.de{{ recipe.url }}",
+            "name": {{ recipe.title | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Tkemali.de Startseite">
+        <img class="brand-logo" src="/assets/logo-plum-square.png" alt="" width="256" height="256" />
+        <span>Tkemali.de</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="/">Startseite</a>
+        <a href="/rezepte/" aria-current="page">Rezepte</a>
+        <a href="/#gruen-rot">Grün oder rot</a>
+        <a href="/#kaufen">Kaufen</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="recipes-hub">
+      <section class="recipes-hero">
+        <img src="/assets/hero-tkemali.webp" alt="Grüne Tkemali-Sauce mit Pflaumen und Kräutern" width="1200" height="800" />
+        <div class="recipes-hero-copy">
+          <p class="section-kicker">Tkemali selber machen</p>
+          <h1>Rezepte für Georgiens berühmte Pflaumensauce.</h1>
+          <p>Wähle die Variante, die zu deinen Pflaumen passt. Jedes Rezept erklärt Zutaten, Geschmack und Zubereitung Schritt für Schritt.</p>
+        </div>
+      </section>
+
+      {% assign featured = recipes | first %}
+      <section class="featured-recipe">
+        <div>
+          <p class="section-kicker">Empfohlen zum Einstieg</p>
+          <h2>{{ featured.title }}</h2>
+          <p>{{ featured.description }}</p>
+          <div class="recipe-meta">
+            <span>{{ featured.total_time }}</span>
+            <span>{{ featured.recipe_yield }}</span>
+            <span>{{ featured.difficulty }}</span>
+          </div>
+          <a class="button primary" href="{{ featured.url }}">Rezept öffnen</a>
+        </div>
+        <img src="{{ featured.image }}" alt="{{ featured.image_alt }}" width="1200" height="800" />
+      </section>
+
+      <section class="recipe-selection" aria-labelledby="rezeptauswahl">
+        <div class="recipes-heading">
+          <p class="section-kicker">Rezeptauswahl</p>
+          <h2 id="rezeptauswahl">Welche Tkemali möchtest du kochen?</h2>
+          <p>Grün und kräftig-sauer, rot und fruchtiger oder mit Mirabellen aus Deutschland.</p>
+        </div>
+
+        <div class="recipe-card-grid">
+          {% for recipe in recipes %}
+          <article class="recipe-card recipe-card--{{ recipe.color }}">
+            <a class="recipe-card-image" href="{{ recipe.url }}" tabindex="-1" aria-hidden="true">
+              <img src="{{ recipe.image }}" alt="" width="1200" height="800" loading="lazy" />
+            </a>
+            <div class="recipe-card-body">
+              <p class="recipe-card-tag">{{ recipe.variant }}</p>
+              <h3><a href="{{ recipe.url }}">{{ recipe.short_title }}</a></h3>
+              <p>{{ recipe.card_text }}</p>
+              <div class="recipe-card-facts">
+                <span>{{ recipe.total_time }}</span>
+                <span>{{ recipe.recipe_yield }}</span>
+              </div>
+              <a class="recipe-card-link" href="{{ recipe.url }}">Zum Rezept <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="recipes-help">
+        <p class="section-kicker">Welche Pflaume?</p>
+        <h2>Die Frucht entscheidet über die Variante.</h2>
+        <div class="recipes-help-grid">
+          <div><strong>Unreif und grün</strong><span>für besonders saure, kräuterbetonte grüne Tkemali</span></div>
+          <div><strong>Reif und rot</strong><span>für eine rundere, fruchtigere rote Sauce</span></div>
+          <div><strong>Gelbe Mirabellen</strong><span>für eine gut verfügbare deutsche Alternative</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Tkemali.de – Wissen und Rezepte zur georgischen Pflaumensauce.</p>
+      <nav class="legal-nav" aria-label="Rechtliche Seiten">
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+      </nav>
+    </footer>
+  </body>
+</html>
