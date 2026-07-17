@@ -2,19 +2,19 @@
 {% assign knowledge_image_alt = page.image_alt %}
 {% case page.nav_key %}
   {% when 'wissen' %}
-    {% assign knowledge_image_src = '/assets/was-ist-tkemali.webp' %}
+    {% assign knowledge_image_src = '/assets/was-ist-tkemali.webp?v=20260717-hq2' %}
     {% assign knowledge_image_alt = 'Grüne Tkemali-Sauce mit grünen Pflaumen, Dill, Koriander und Knoblauch' %}
   {% when 'varianten' %}
-    {% assign knowledge_image_src = '/assets/gruen-oder-rot.webp' %}
+    {% assign knowledge_image_src = '/assets/gruen-oder-rot.webp?v=20260717-hq2' %}
     {% assign knowledge_image_alt = 'Grüne und rote Tkemali-Sauce mit passenden Pflaumen und Kräutern' %}
   {% when 'kaufen' %}
-    {% assign knowledge_image_src = '/assets/tkemali-kaufen.webp' %}
+    {% assign knowledge_image_src = '/assets/tkemali-kaufen.webp?v=20260717-hq2' %}
     {% assign knowledge_image_alt = 'Flaschen und Gläser mit grüner und roter Tkemali-Sauce' %}
   {% when 'verwendung' %}
-    {% assign knowledge_image_src = '/assets/wozu-passt-tkemali.webp' %}
+    {% assign knowledge_image_src = '/assets/wozu-passt-tkemali.webp?v=20260717-hq2' %}
     {% assign knowledge_image_alt = 'Tkemali-Sauce zu gegrilltem Fleisch, Kartoffeln und Gemüse' %}
   {% when 'faq' %}
-    {% assign knowledge_image_src = '/assets/faq-tkemali.webp' %}
+    {% assign knowledge_image_src = '/assets/faq-tkemali.webp?v=20260717-hq2' %}
     {% assign knowledge_image_alt = 'Tkemali-Sauce mit Pflaumen, Kräutern und Knoblauch' %}
 {% endcase %}
 <!doctype html>
@@ -128,7 +128,7 @@
             <h1>{{ page.title }}</h1>
             <p class="knowledge-lead">{{ page.lead }}</p>
           </div>
-          <img src="{{ knowledge_image_src }}" alt="{{ knowledge_image_alt }}" width="1200" height="800" decoding="async" fetchpriority="high" />
+          <img src="{{ knowledge_image_src }}" alt="{{ knowledge_image_alt }}" width="1536" height="1024" decoding="async" fetchpriority="high" />
         </header>
 
         <div class="knowledge-layout">
