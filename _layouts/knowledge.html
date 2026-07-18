@@ -34,7 +34,7 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/style.css?v=20260717-2" />
-    <link rel="stylesheet" href="/assets/knowledge.css?v=20260718-table-scroll" />
+    <link rel="stylesheet" href="/assets/knowledge.css?v=20260718-shops" />
     <meta property="og:title" content="{{ page.seo_title | default: page.title }} | Tkemali.de" />
     <meta property="og:description" content="{{ page.description | escape }}" />
     <meta property="og:type" content="article" />
@@ -84,7 +84,21 @@
                 "item": "{{ site.url }}{{ page.url }}"
               }
             ]
-          }{% if page.faq_items %},
+          }{% if page.shop_items %},
+          {
+            "@type": "ItemList",
+            "name": "Empfohlene Tkemali-Händler in Deutschland",
+            "itemListElement": [
+              {% for shop in page.shop_items %}
+              {
+                "@type": "ListItem",
+                "position": {{ forloop.index }},
+                "name": {{ shop.name | jsonify }},
+                "url": {{ shop.url | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ]
+          }{% endif %}{% if page.faq_items %},
           {
             "@type": "FAQPage",
             "mainEntity": [

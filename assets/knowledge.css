@@ -176,6 +176,114 @@
   margin-bottom: 0;
 }
 
+.shop-card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 30px 0 38px;
+}
+
+.shop-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 16px 48px rgba(18, 63, 47, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(22px, 4vw, 30px);
+}
+
+.shop-card--featured {
+  background: linear-gradient(135deg, #f4faf6 0%, #e6f4ea 100%);
+  border-color: rgba(31, 104, 72, 0.34);
+  grid-column: 1 / -1;
+}
+
+.shop-badge {
+  align-self: flex-start;
+  background: var(--soft);
+  border: 1px solid rgba(31, 104, 72, 0.18);
+  border-radius: 999px;
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  margin-bottom: 18px;
+  padding: 7px 11px;
+  text-transform: uppercase;
+}
+
+.shop-card--featured .shop-badge {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  color: white;
+}
+
+.shop-card h3 {
+  color: var(--green-dark);
+  font-size: clamp(25px, 3vw, 32px);
+  line-height: 1.12;
+  margin: 0 0 13px;
+}
+
+.shop-card p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.68;
+  margin: 0;
+}
+
+.shop-facts {
+  margin: 22px 0 26px;
+}
+
+.shop-facts > div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(80px, 0.38fr) minmax(0, 1fr);
+  padding: 10px 0;
+}
+
+.shop-facts > div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.shop-facts dt,
+.shop-facts dd {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.shop-facts dt {
+  color: var(--green-dark);
+  font-weight: 850;
+}
+
+.shop-facts dd {
+  color: var(--muted);
+}
+
+.shop-card .shop-button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.shop-price-note {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: -12px;
+}
+
+.shop-update,
+.shop-transparency {
+  margin-top: 34px;
+}
+
 .knowledge-sidebar {
   display: grid;
   gap: 16px;
@@ -265,6 +373,14 @@
     grid-template-columns: 1fr;
   }
 
+  .shop-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-card--featured {
+    grid-column: auto;
+  }
+
   .knowledge-main table {
     min-width: 680px;
   }
@@ -324,6 +440,20 @@
 
   .knowledge-main table td::before {
     content: none;
+  }
+
+  .shop-card {
+    padding: 22px;
+  }
+
+  .shop-facts > div {
+    gap: 2px;
+    grid-template-columns: 1fr;
+  }
+
+  .shop-card .shop-button {
+    align-self: stretch;
+    text-align: center;
   }
 
   .knowledge-related {
