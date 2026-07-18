@@ -828,11 +828,9 @@ details p {
 .recipes-hero h1,
 .recipe-page-hero h1 {
   font-size: clamp(40px, 4.8vw, 64px);
-  hyphens: auto;
   line-height: 1;
   margin-bottom: 22px;
   overflow-wrap: anywhere;
-  text-wrap: balance;
 }
 
 .recipes-hero p,
@@ -1332,5 +1330,12 @@ details p {
   .more-recipes {
     align-items: stretch;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .recipes-hero h1,
+  .recipe-page-hero h1 {
+    font-size: 32px;
   }
 }
