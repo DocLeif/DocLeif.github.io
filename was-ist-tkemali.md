@@ -94,12 +94,16 @@ Beim Kochen sollte die Sauce nicht alles überdecken. Oft genügt bereits eine k
 
 ## Tkemali im Vergleich zu anderen Saucen {#vergleich}
 
+<div class="table-wrap" role="region" aria-label="Vergleich von Tkemali mit anderen Saucen" tabindex="0" markdown="1">
+
 | Sauce | Typischer Schwerpunkt | Unterschied zu Tkemali |
 |---|---|---|
 | Ketchup | süß, tomatig, mild-säuerlich | Tkemali ist kräutriger, fruchtiger und meist deutlich saurer |
 | Chutney | süß-sauer, stückig, oft gewürzt | Tkemali ist meist glatter und weniger süß |
 | Pflaumensauce | häufig süß und mild | Tkemali setzt stärker auf Säure, Kräuter und Knoblauch |
 | BBQ-Sauce | rauchig, süß, kräftig | Tkemali wirkt frischer und leichter |
+
+</div>
 
 Tkemali ist deshalb kein direkter Ersatz für jede Sauce. Sie übernimmt aber eine ähnliche Rolle: Sie macht einfache Gerichte spannender und gibt schweren Speisen einen frischen Gegenpol.
 

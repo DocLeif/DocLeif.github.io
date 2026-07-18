@@ -104,6 +104,8 @@ Besonders praktisch ist eine kleine Schale Tkemali auf einer gemischten Platte m
 
 Tkemali muss nicht nur traditionell eingesetzt werden. Sie funktioniert auch in vielen modernen Gerichten:
 
+<div class="table-wrap" role="region" aria-label="Moderne Verwendungsmöglichkeiten für Tkemali" tabindex="0" markdown="1">
+
 | Gericht | So verwendest du Tkemali |
 |---|---|
 | Burger | dünn auf das Brötchen streichen oder mit Mayonnaise mischen |
@@ -113,6 +115,8 @@ Tkemali muss nicht nur traditionell eingesetzt werden. Sie funktioniert auch in 
 | Pommes | pur als Dip oder mit Joghurt gemischt |
 | Salatdressing | mit Öl und etwas Wasser verdünnen |
 | Marinade | mit Öl, Knoblauch und Gewürzen vermischen |
+
+</div>
 
 Für ein milderes Dressing kannst du Tkemali mit Naturjoghurt, Schmand oder einer pflanzlichen Alternative verrühren. So bleibt die fruchtige Säure erhalten, wirkt aber weniger intensiv.
 

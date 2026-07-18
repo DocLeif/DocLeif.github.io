@@ -109,11 +109,15 @@ Begriffe wie „Aroma“ sagen allein wenig über Qualität aus. Eine klare, kur
 
 ## Online oder im Laden kaufen?
 
+<div class="table-wrap" role="region" aria-label="Vergleich der Möglichkeiten, Tkemali zu kaufen" tabindex="0" markdown="1">
+
 | Kaufart | Vorteil | Darauf achten |
 |---|---|---|
 | Laden | Etikett und Flasche direkt prüfen | Auswahl kann kleiner sein |
 | Online-Shop | größere Sorten- und Markenauswahl | Versandkosten und Lieferbedingungen prüfen |
 | Restaurant oder Feinkostladen | oft persönliche Empfehlung möglich | klären, ob die Sauce abgefüllt verkauft wird |
+
+</div>
 
 Für den ersten Kauf kann eine einzelne Flasche sinnvoller sein als ein großes Vorratspaket. So kannst du testen, ob dir Säure, Schärfe und Kräutermischung gefallen.
 

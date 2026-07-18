@@ -38,6 +38,8 @@ Grüne und rote Tkemali sind keine völlig unterschiedlichen Saucen. Beide folge
 
 ## Grünes, rotes und gelbes Tkemali im Vergleich {#vergleich}
 
+<div class="table-wrap" role="region" aria-label="Vergleich von grüner, roter und gelber Tkemali" tabindex="0" markdown="1">
+
 | Merkmal | Grüne Tkemali | Rote Tkemali | Gelbe Tkemali |
 |---|---|---|---|
 | Pflaumen | unreif oder grün | reifer, rot oder dunkel | gelbe Kirschpflaumen oder Mirabellen |
@@ -45,6 +47,8 @@ Grüne und rote Tkemali sind keine völlig unterschiedlichen Saucen. Beide folge
 | Farbe | grün bis gelbgrün | rot bis dunkelbraun | gelb bis goldfarben |
 | Passt besonders zu | Fisch, Kartoffeln, Gemüse, Geflügel | Grillfleisch, Lamm, Schaschlik, deftige Speisen | Käse, Brot, Gemüse, Sommerküche |
 | Für Einsteiger | markant und typisch | oft leichter zugänglich | mild und unkompliziert |
+
+</div>
 
 <div class="knowledge-callout">
   <strong>Die einfache Entscheidung:</strong>

@@ -89,9 +89,21 @@
   margin-top: 8px;
 }
 
-.knowledge-main .table-wrap,
-.knowledge-main table {
+.knowledge-main .table-wrap {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 60px rgba(18, 63, 47, 0.08);
   margin: 28px 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.knowledge-main .table-wrap:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
 }
 
 .knowledge-main table {
@@ -102,6 +114,13 @@
   display: table;
   min-width: 720px;
   overflow: hidden;
+}
+
+.knowledge-main .table-wrap table {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
 }
 
 .knowledge-main table th,
@@ -278,10 +297,6 @@
     font-size: 29px;
     line-height: 1.08;
     margin-top: 58px;
-  }
-
-  .knowledge-main .table-wrap {
-    overflow-x: auto;
   }
 
   .knowledge-main table {
