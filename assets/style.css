@@ -799,9 +799,16 @@ details p {
   border-radius: 12px;
   color: white;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
   min-height: 520px;
   overflow: hidden;
+}
+
+.recipes-hero {
+  grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
+}
+
+.recipe-page-hero {
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
 }
 
 .recipes-hero > img,
@@ -814,13 +821,18 @@ details p {
 .recipes-hero-copy,
 .recipe-page-hero-copy {
   align-self: center;
-  padding: clamp(36px, 6vw, 76px);
+  min-width: 0;
+  padding: clamp(36px, 5vw, 68px);
 }
 
 .recipes-hero h1,
 .recipe-page-hero h1 {
-  font-size: clamp(42px, 5.7vw, 76px);
+  font-size: clamp(40px, 4.8vw, 64px);
+  hyphens: auto;
+  line-height: 1;
   margin-bottom: 22px;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .recipes-hero p,
