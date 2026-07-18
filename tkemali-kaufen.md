@@ -54,6 +54,8 @@ faq_items:
     answer: "Nein. Die Auswahl und Reihenfolge sind redaktionell und unabhängig. Anbieter können keine bessere Platzierung kaufen. Sollten später Affiliate-Links verwendet werden, werden sie deutlich gekennzeichnet."
   - question: "Wie aktuell sind Preise und Verfügbarkeit?"
     answer: "Die Angaben wurden zuletzt am 18. Juli 2026 geprüft. Preise, Lagerbestand, Versandkosten und Lieferzeiten können sich jederzeit ändern; maßgeblich sind die Angaben im jeweiligen Shop."
+  - question: "Kann ein weiterer Tkemali-Händler aufgenommen werden?"
+    answer: 'Ja, gerne. Händler dürfen sich selbst melden; auch Leser können uns über das <a href="/#kontakt">Kontaktformular auf der Startseite</a> einen weiteren Anbieter vorschlagen. Für die Prüfung helfen ein Link zum Shop, Angaben zum aktuellen Tkemali-Sortiment und Informationen zum Versand nach Deutschland. Eine Meldung garantiert keine Aufnahme; die Auswahl bleibt redaktionell und richtet sich nach den oben genannten Kriterien.'
   - question: "Soll ich grüne oder rote Tkemali kaufen?"
     answer: "Grüne Tkemali ist meist frischer, kräuterbetonter und deutlich säuerlich. Rote Tkemali schmeckt häufig fruchtiger und runder. Für einen direkten Vergleich ist ein Händler mit beiden Varianten besonders praktisch."
 ---
