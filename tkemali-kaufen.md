@@ -1,7 +1,7 @@
 ---
 layout: knowledge
-title: "Tkemali kaufen: Die besten Händler in Deutschland"
-seo_title: "Tkemali kaufen: Die besten Händler in Deutschland"
+title: "Tkemali kaufen: Fünf empfehlenswerte Händler in Deutschland"
+seo_title: "Tkemali kaufen: 5 empfehlenswerte Händler"
 description: "Tkemali kaufen: Fünf empfehlenswerte deutsche Online-Shops im Vergleich – mit Sorten, Marken, Preisen, Lieferzeiten und transparenten Prüfkriterien."
 permalink: /tkemali-kaufen/
 image: /assets/rezept-gruene-tkemali.webp
