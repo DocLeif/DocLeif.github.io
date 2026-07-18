@@ -18,7 +18,7 @@ shop_items:
   - name: "GeoWeinHaus"
     url: "https://geoweinhaus.de/tkemali-rot"
   - name: "Posylka"
-    url: "https://www.posylka.de/de/sauce-tkemali-klassisch-fruchtig-300-g-08065341.html"
+    url: "https://www.posylka.de/de/search/?q=Tkemali"
   - name: "Express-Shop.tv"
     url: "https://www.express-shop.tv/Tkemali-Gruen-530g-Marneuli/10473"
 toc:
@@ -116,7 +116,7 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
       <div><dt>Marken</dt><dd>Kinto und Mimino</dd></div>
       <div><dt>Lieferzeit</dt><dd>innerhalb Deutschlands meist 2–3 Werktage</dd></div>
     </dl>
-    <a class="button secondary shop-button" href="https://www.posylka.de/de/sauce-tkemali-klassisch-fruchtig-300-g-08065341.html" target="_blank" rel="noopener noreferrer">Tkemali bei Posylka ansehen</a>
+    <a class="button secondary shop-button" href="https://www.posylka.de/de/search/?q=Tkemali" target="_blank" rel="noopener noreferrer">Tkemali bei Posylka ansehen</a>
   </article>
 
   <article class="shop-card">
