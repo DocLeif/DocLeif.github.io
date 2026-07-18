@@ -81,6 +81,11 @@ nav a:hover {
   color: var(--green-dark);
 }
 
+.site-header a[aria-current="page"] {
+  background: var(--soft);
+  color: var(--green-dark);
+}
+
 .hero {
   align-items: center;
   display: grid;
