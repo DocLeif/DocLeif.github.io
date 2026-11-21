@@ -53,7 +53,7 @@ faq_items:
   - question: "Sind die Platzierungen bezahlt?"
     answer: "Nein. Die Auswahl und Reihenfolge sind redaktionell und unabhängig. Anbieter können keine bessere Platzierung kaufen. Sollten später Affiliate-Links verwendet werden, werden sie deutlich gekennzeichnet."
   - question: "Wie aktuell sind Preise und Verfügbarkeit?"
-    answer: "Die Angaben wurden zuletzt am 18. Juli 2026 geprüft. Preise, Lagerbestand, Versandkosten und Lieferzeiten können sich jederzeit ändern; maßgeblich sind die Angaben im jeweiligen Shop."
+    answer: "Preise, Lagerbestand, Versandkosten und Lieferzeiten können sich jederzeit ändern. Maßgeblich sind immer die aktuellen Angaben im jeweiligen Shop."
   - question: "Kann ein weiterer Tkemali-Händler aufgenommen werden?"
     answer: 'Ja, gerne. Händler dürfen sich selbst melden; auch Leser können uns über das <a href="/#kontakt">Kontaktformular auf der Startseite</a> einen weiteren Anbieter vorschlagen. Für die Prüfung helfen ein Link zum Shop, Angaben zum aktuellen Tkemali-Sortiment und Informationen zum Versand nach Deutschland. Eine Meldung garantiert keine Aufnahme; die Auswahl bleibt redaktionell und richtet sich nach den oben genannten Kriterien.'
   - question: "Soll ich grüne oder rote Tkemali kaufen?"
@@ -68,11 +68,11 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
   <article class="shop-card shop-card--featured">
     <span class="shop-badge">Top-Empfehlung · größte Auswahl</span>
     <h3>Geobest</h3>
-    <p>Geobest bietet die breiteste von uns geprüfte Auswahl. Gelistet sind sieben Tkemali-Produkte von GF und Marneuli in Grün, Rot und Gelb. Damit ist der Shop besonders für den ersten Kauf und einen Vergleich verschiedener Sorten geeignet.</p>
+    <p>Geobest bietet in unserer Auswahl besonders viele Tkemali-Produkte von GF und Marneuli in Grün, Rot und Gelb. Damit ist der Shop besonders für den ersten Kauf und einen Vergleich verschiedener Sorten geeignet.</p>
     <dl class="shop-facts">
       <div><dt>Sorten</dt><dd>Grün, Rot und Gelb</dd></div>
       <div><dt>Marken</dt><dd>GF und Marneuli</dd></div>
-      <div><dt>Auswahl</dt><dd>7 Produkte, davon 5 bei der Prüfung verfügbar</dd></div>
+      <div><dt>Auswahl</dt><dd>7 gelistete Produkte</dd></div>
       <div><dt>Lieferzeit</dt><dd>bei verfügbaren Produkten meist 2–3 Werktage</dd></div>
     </dl>
     <a class="button primary shop-button" href="https://geobest.de/Tkemali" target="_blank" rel="noopener noreferrer">Tkemali bei Geobest ansehen</a>
@@ -97,7 +97,7 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
     <dl class="shop-facts">
       <div><dt>Sorten</dt><dd>Grün und Rot</dd></div>
       <div><dt>Marke</dt><dd>Georgian Production</dd></div>
-      <div><dt>Status</dt><dd>bei der Prüfung sofort verfügbar</dd></div>
+
     </dl>
     <a class="button secondary shop-button" href="https://geoweinhaus.de/tkemali-rot" target="_blank" rel="noopener noreferrer">Tkemali bei GeoWeinHaus ansehen</a>
   </article>
@@ -117,7 +117,7 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
   <article class="shop-card">
     <span class="shop-badge">Kurze Lieferzeit</span>
     <h3>Express-Shop.tv</h3>
-    <p>Express-Shop.tv ist unsere gezielte Empfehlung für grüne Tkemali von Marneuli. Die Auswahl ist kleiner, das geprüfte Angebot war jedoch sofort verfügbar und mit einer kurzen Lieferzeit angegeben.</p>
+    <p>Express-Shop.tv ist unsere gezielte Empfehlung für grüne Tkemali von Marneuli. Die Auswahl ist kleiner und konzentriert sich hier auf eine konkrete Marneuli-Variante.</p>
     <dl class="shop-facts">
       <div><dt>Sorte</dt><dd>Grün</dd></div>
       <div><dt>Marke</dt><dd>Marneuli</dd></div>
@@ -132,7 +132,7 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
 
 <div class="table-wrap" role="region" aria-label="Vergleich der empfohlenen Tkemali-Händler" tabindex="0" markdown="1">
 
-| Händler | Besonders geeignet für | Sortiment | Preisbeispiel bei Prüfung* | Lieferhinweis |
+| Händler | Besonders geeignet für | Sortiment | Preisbeispiel* | Lieferhinweis |
 |---|---|---|---:|---|
 | **Geobest** | größte Auswahl | GF und Marneuli; Grün, Rot, Gelb | ab 3,80 € | meist 2–3 Werktage |
 | **OriGeo** | Rot und Grün vergleichen | zwei klassische Varianten, je 530 g | 5,50 € | ca. 3–4 Tage |
@@ -142,7 +142,7 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
 
 </div>
 
-<p class="shop-price-note">* Stand 18. Juli 2026, jeweils ohne Versandkosten. Aktionspreise können enden. Prüfe vor der Bestellung den Gesamtpreis direkt beim Händler.</p>
+<p class="shop-price-note">* Preisbeispiele jeweils ohne Versandkosten. Preise und Aktionen können sich ändern. Prüfe vor der Bestellung den Gesamtpreis direkt beim Händler.</p>
 
 ## Nach welchen Kriterien wählen wir aus? {#auswahlkriterien}
 
@@ -182,4 +182,4 @@ Eine ausführliche Entscheidungshilfe findest du unter [Grüne oder rote Tkemali
   <span>Keiner der genannten Händler hat für die Aufnahme oder Platzierung bezahlt. Die ausgehenden Links sind derzeit redaktionelle Verweise. Sollten später Affiliate-Links hinzukommen, werden sie eindeutig gekennzeichnet und verändern die Empfehlungsreihenfolge nicht.</span>
 </div>
 
-Diese Seite beansprucht nicht, jeden kleinen stationären Laden in Deutschland vollständig zu erfassen. Sie konzentriert sich auf wenige empfehlenswerte Online-Händler, deren Angebot öffentlich geprüft werden kann. Maßgeblich für eine Bestellung sind immer die aktuellen Angaben und Bedingungen des jeweiligen Shops.
+Diese Seite beansprucht nicht, jeden kleinen stationären Laden in Deutschland vollständig zu erfassen. Sie konzentriert sich auf wenige empfehlenswerte Online-Händler mit öffentlich nachvollziehbarem Angebot. Maßgeblich für eine Bestellung sind immer die aktuellen Angaben und Bedingungen des jeweiligen Shops.
