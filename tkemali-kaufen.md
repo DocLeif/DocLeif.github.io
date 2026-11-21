@@ -52,8 +52,6 @@ faq_items:
     answer: "Auf Marktplätzen wechseln Verkäufer, Preise und Verfügbarkeit häufig. Zudem stehen hinter vielen Angeboten dieselben Fachhändler, die direkt über ihren eigenen Shop erreichbar sind. Deshalb empfehlen wir bevorzugt die Händler selbst."
   - question: "Sind die Platzierungen bezahlt?"
     answer: "Nein. Die Auswahl und Reihenfolge sind redaktionell und unabhängig. Anbieter können keine bessere Platzierung kaufen. Sollten später Affiliate-Links verwendet werden, werden sie deutlich gekennzeichnet."
-  - question: "Wie aktuell sind Preise und Verfügbarkeit?"
-    answer: "Preise, Lagerbestand, Versandkosten und Lieferzeiten können sich jederzeit ändern. Maßgeblich sind immer die aktuellen Angaben im jeweiligen Shop."
   - question: "Kann ein weiterer Tkemali-Händler aufgenommen werden?"
     answer: 'Ja, gerne. Händler dürfen sich selbst melden; auch Leser können uns über das <a href="/#kontakt">Kontaktformular auf der Startseite</a> einen weiteren Anbieter vorschlagen. Für die Prüfung helfen ein Link zum Shop, Angaben zum aktuellen Tkemali-Sortiment und Informationen zum Versand nach Deutschland. Eine Meldung garantiert keine Aufnahme; die Auswahl bleibt redaktionell und richtet sich nach den oben genannten Kriterien.'
   - question: "Soll ich grüne oder rote Tkemali kaufen?"
@@ -141,8 +139,6 @@ Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine g
 | **Express-Shop.tv** | Marneuli Grün mit kurzer Lieferzeit | Marneuli Grün, 530 g | 4,59 € | 1–3 Tage |
 
 </div>
-
-<p class="shop-price-note">* Preisbeispiele jeweils ohne Versandkosten. Preise und Aktionen können sich ändern. Prüfe vor der Bestellung den Gesamtpreis direkt beim Händler.</p>
 
 ## Nach welchen Kriterien wählen wir aus? {#auswahlkriterien}
 
