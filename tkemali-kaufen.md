@@ -62,11 +62,6 @@ faq_items:
 
 Tkemali ist in Deutschland noch kein gewöhnliches Supermarktprodukt. Wer eine gute georgische Pflaumensauce sucht, findet die zuverlässigste Auswahl deshalb meist bei spezialisierten Online-Shops. Aus den recherchierten Bezugsquellen haben wir fünf Händler ausgewählt, die sich durch ein klares, überprüfbares Merkmal empfehlen.
 
-<div class="knowledge-callout shop-update">
-  <strong>Zuletzt geprüft: 18. Juli 2026</strong>
-  <span>Die Auswahl ist redaktionell und unabhängig. Preise, Lagerbestand und Lieferzeiten können sich kurzfristig ändern; verbindlich sind immer die Angaben im jeweiligen Shop.</span>
-</div>
-
 ## Unsere Empfehlungen {#empfehlungen}
 
 <div class="shop-card-grid">
